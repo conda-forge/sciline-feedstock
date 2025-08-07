@@ -1,6 +1,6 @@
 context:
   name: sciline
-  version: 25.5.2
+  version: "25.8.0"
   python_min: "3.10"
 
 package:
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/sciline-${{ version }}.tar.gz
-  sha256: bbed7694defe96a3a3aaefb54f8c11358a901147c441ec275d31a1ebb26ae27d
+  sha256: fc2197ae15d819c117eea2185c67a9a5a02ee4dfb6936a5e9ac9d37e14b1f30b
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -23,7 +23,7 @@ requirements:
     - setuptools-scm >=8.0
     - pip
   run:
-    - python >=${{ python_min }} 
+    - python >=${{ python_min }}
     - cyclebane >=24.06.0
     - typing_extensions
 
@@ -38,7 +38,7 @@ about:
   summary: Build scientific pipelines for your data
   license: BSD-3-Clause
   license_file: LICENSE
-  repository: https://github.com/scipp/sciline 
+  repository: https://github.com/scipp/sciline
   homepage: https://scipp.github.io/sciline/
 
 extra:
