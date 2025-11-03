@@ -1,7 +1,7 @@
 context:
   name: sciline
   version: "25.11.0"
-  python_min: "3.10"
+  python_min: "3.11"
 
 package:
   name: ${{ name|lower }}
@@ -25,7 +25,6 @@ requirements:
   run:
     - python >=${{ python_min }}
     - cyclebane >=24.06.0
-    - typing_extensions
 
 tests:
   - python:
