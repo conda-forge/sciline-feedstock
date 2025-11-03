@@ -1,7 +1,7 @@
 context:
   name: sciline
-  version: "25.8.0"
-  python_min: "3.10"
+  version: "25.11.1"
+  python_min: "3.11"
 
 package:
   name: ${{ name|lower }}
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/sciline-${{ version }}.tar.gz
-  sha256: fc2197ae15d819c117eea2185c67a9a5a02ee4dfb6936a5e9ac9d37e14b1f30b
+  sha256: ba474566eb0631a44bf02b28841e302459064e5359a7eb18366286f16f9a97b9
 
 build:
   number: 0
